@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>هنر دست</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه عرضه انواع صنایع دستی اعم از : لوازم چوبی، نمدی، میناکاری، فیروزه کوبی، مسی و غیره">
+    <meta name="keywords" content="ظروف مسی, ظروف میناکاری, نمدبافی, خاتم کاری, فیروزه کوبی, ترمه دوزی, لوازم چوبی, جواهرات, حصیر بافی, فرش بافی, سفالگری, آبگینه">
+    <meta name="author" content="Arman Birjandi, sina tamjid">
+    <link type="image/x-icon" href="./img/Logo.ico" rel="shortcut icon">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <div class="accBox"><a class="cancel" href="#"> <i class="fa-solid fa-xmark"></i></a>
+      <div class="formBox">
+        <form class="loginForm" id="logForm"> 
+          <h3 class="formTitle">ورود</h3>
+          <label class="form-label label_1" for="usernameInp">نام کاربری</label>
+          <input class="form-control" id="usernameInp" type="email" placeholder="ایمیل خود را وارد کنید" required>
+          <label class="form-label label_2" for="passInp">رمز عبور</label>
+          <input class="form-control" id="passInp" type="password" placeholder="رمز عبور خود را وارد کنید" required>
+          <div class="rememberCheck_div" id="rmch">
+            <label class="form-label label_3" for="rememberCheck">به خاطر سپردن</label>
+            <input class="form-check-input" id="rememberCheck" type="checkbox" required>
+          </div>
+          <input class="form-control" id="submitLogin" type="submit" value="ورود">
+          <p class="forgetPass">رمز خود را فراموش کرده اید؟ <a class="loginLink" href="#">اینجا کلیک کنید</a></p>
+          <p class="signUp">ثبت نام نکرده اید؟ <a class="loginLink" href="#">ساخت حساب</a></p>
+        </form>
+      </div>
+    </div>
+    <header class="nav navbar navbar-expand-lg bg-dark text-center header" id="header" name="header"><a class="ms-5 me-4 logo_link" name="logo_link" href="./index.html"> <img class="logo_img" name="logo" src="./img/Logo.png" title="هنر دست " alt="logo"></a>
+      <ul class="menu_bar" id="menu_bar_ul" name="menu_bar">
+        <li class="mx-4 menu_item" name="menu_item">
+          <p class="bg_a"></p><a class="text-white item_link" name="home" href="./index.html" title="خانه">خانه</a>
+        </li>
+        <li class="mx-4 menu_item" name="menu_item">
+          <p class="bg_a"></p><a class="text-white item_link" name="products" href="./products.html" title="محصولات">محصولات</a>
+        </li>
+        <li class="mx-4 menu_item" name="menu_item">
+          <p class="bg_a"></p><a class="text-white item_link" name="about us" href="#about_content" title="درباره ما" onclick="aboutContentClick()">درباره ما</a>
+        </li>
+        <li class="mx-4 menu_item" name="menu_item">
+          <p class="bg_a"></p><a class="text-white item_link" name="contact us" href="#" title="تماس با ما">تماس با ما</a>
+        </li>
+      </ul>
+      <div class="icon_header" id="icon_header"><a class="icon icon_1" name="icon" href="#"> <i class="text-white fas fa-magnifying-glass icon icon_1" name="icon" title="جستجو"></i></a><a class="icon icon_2" name="icon" href="#"> <i class="text-white fa-regular fa-circle-user icon icon_2" name="icon" title="حساب کاربری"></i></a><a class="icon icon_3" name="icon" href="#"> 
+          <div class="badge"></div><i class="text-white fa-solid fa-basket-shopping icon icon_3" name="icon" title="سبد خرید"></i></a></div><a class="bars" name="bars" href="#"><i class="fa-solid fa-bars"></i></a>
+      <div class="d-flex flex-row div_search">
+        <input class="form-control search_field" type="search" placeholder="جستجو کنید ...">
+        <button class="fas fa-magnifying-glass btn search_btn" type="submit"></button>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <div class="slider"><img class="img img_1" src="./img/slide_1.gif" alt="slide_pic_1"><img class="img img_2" src="./img/slide_2.jpg" alt="slide_pic_2"><img class="img img_3" src="./img/slide_3.gif" alt="slide_pic_3"><img class="img img_4" src="./img/slide_4.jpg" alt="slide_pic_4">
+        <div class="btn_div">
+          <input class="mx-1 btn_slide btn_1" type="button">
+          <input class="mx-1 btn_slide btn_2" type="button">
+          <input class="mx-1 btn_slide btn_3" type="button">
+          <input class="mx-1 btn_slide btn_4" type="button">
+        </div><a class="btn_previous" href="#"><i class="fa-solid fa-angle-left angle_left"></i></a><a class="btn_next" href="#"><i class="fa-solid fa-angle-right angle_right"></i></a>
+      </div>
+      <div class="bg-dark introduction px-5 pt-5"><img class="text-white intro_img i_img_1" src="./img/intro_1.jpg" alt="intro_img_1"><img class="text-white intro_img i_img_2" src="./img/intro_2.jpg" alt="intro_img_2"><img class="text-white intro_img i_img_3" src="./img/intro_3.jpg" alt="intro_img_3">
+        <div class="facilities mt-3 mb-3">
+          <div class="facilities_1"> 
+            <h5 class="text-white facilities_title">اصالت کالا</h5>
+            <p class="text-white facilities_text">تضمین خلوص و اصالت کالا</p><i class="text-white fas fa-thumbs-up f_icon"></i>
+          </div>
+          <div class="facilities_2"> 
+            <h5 class="text-white facilities_title">ضمانت بازگشت کالا</h5>
+            <p class="text-white facilities_text">به مدت 3 روز</p><i class="text-white fa-solid fa-rotate f_icon"></i>
+          </div>
+          <div class="facilities_3"> 
+            <h5 class="text-white facilities_title"><a class="text-white facilities_link_title" href="#"> کد تخفیف دارید؟</a></h5><a class="text-white facilities_link" href="#">چگونه از کد تخفیف استفاده کنم؟</a><i class="text-white fa-solid fa-clipboard-check f_icon"></i>
+          </div>
+          <div class="facilities_4"> 
+            <h5 class="text-white facilities_title"><a class="text-white facilities_link_title" href="#"> ارسال رایگان</a></h5><a class="text-white facilities_link" href="#">سفارشات بالای 500 هزار تومان</a><i class="text-white fa-solid fa-truck f_icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="new_content_item px-4 pt-3 pb-5" name="new_content_item">
+        <h2 class="text-white new_content_title" name="new_content_title" title="جدید ترین ها">جدید ترین ها</h2><a class="slider_link" name="all_show" href="#" title="مشاهده همه">مشاهده همه &nbsp;<i class="fa-solid fa-arrow-left arrow_buy" name="arrow_buy"></i></a>
+        <div class="new_items">
+          <div class="bg-dark text-white card new_item card_1" name="new_item" title=""><img class="new_img image_1" src="./img/new_item_1.jpg" title="ساعت مینا کاری" alt="new_item_1">
+            <p>ساعت میناکاری اصفهان</p>
+            <p>850,000 تومان                  </p>
+            <input class="add_buy_btn" name="add_to_buy" type="button" title="افزودن به سبد خرید" value="افزودن به سبد خرید">
+          </div>
+          <div class="bg-dark text-white card new_item card_2" name="new_item" title=""><img class="new_img image_2" src="./img/new_item_15.jpg" title="ست آینه شمعدان فیروزه کوبی" alt="new_item_2">
+            <p>خودکار فیروزه کوبی مشهد</p>
+            <p>300,000 تومان                  </p>
+            <input class="add_buy_btn" name="add_to_buy" type="button" title="افزودن به سبد خرید" value="افزودن به سبد خرید">
+          </div>
+          <div class="bg-dark text-white card new_item card_3" name="new_item" title=""><img class="new_img image_3" src="./img/new_item_4.jpg" title="ست کیف و کفش با پارچه ترمه" alt="new_item_4">
+            <p>ست کفش و کیف ترمه یزد</p>
+            <p>990,000 تومان                  </p>
+            <input class="add_buy_btn" name="add_to_buy" type="button" title="افزودن به سبد خرید" value="افزودن به سبد خرید">
+          </div>
+          <div class="bg-dark text-white card new_item card_4" name="new_item" title=""><img class="new_img image_4" src="./img/new_item_7.jpg" title="شکلات خوری مسی" alt="new_item_7">
+            <p>ظروف آجیل خوری اصفهان</p>
+            <p>1,200,000 تومان                  </p>
+            <input class="add_buy_btn" name="add_to_buy" type="button" title="افزودن به سبد خرید" value="افزودن به سبد خرید">
+          </div>
+          <div class="bg-dark text-white card new_item card_5" name="new_item" title=""><img class="new_img image_5" src="./img/new_item_8.jpg" title="فرش با طرح گل و مرغ" alt="new_item_8">
+            <p>فرش طرح گل و مرغ مازندران</p>
+            <p>10,000,000 تومان                  </p>
+            <input class="add_buy_btn" name="add_to_buy" type="button" title="افزودن به سبد خرید" value="افزودن به سبد خرید">
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark about_content" id="about_content" name="about_content"> 
+        <h2 class="text-white about_title" name="about_title" title="درباره هنر دست ">درباره هنر دست </h2>
+        <p class="text-white about_txt" name="about_txt" title="توضیحات">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+        <input class="read_more_btn" name="read_more" type="button" title="مطالعه بیشتر" value="مطالعه بیشتر"><img class="read_more_img_2" name="read_more_img_2" src="./img/hasir_1.jpg" alt="read_more_img_2"><img class="read_more_img_3" name="read_more_img_3" src="./img/mina_kari.jpg" alt="read_more_img_3">
+      </div>
+      <div class="comment">
+        <p class="text_guide">نظرات، انتقادات، پیشنهادات و سفارشات خود را از اینجا ثبت نمایید</p><a class="btn_link" href="#"> 
+          <input class="btn_slink" name="btn_link" type="button" value="ثبت"></a>
+      </div>
+    </main>
+    <footer class="bg-dark footer" name="footer_content"> <img class="footer_logo" src="./img/Logo.png" alt="logo">
+      <ul class="information_site" name="information_site">
+        <li class="information_item" name="information_item" title="آدرس">نشانی : تهران، میدان فردوسی، خیابان انقلاب، خیابان نجات الهی، پلاک 205</li>
+        <li class="information_item" name="information_item" title="شماره تلفن">شماره تماس : 02135468790</li>
+        <li class="information_item" name="information_item" title="ایمیل">آدرس ایمیل : <a class="info_email_link" href="mailto:info@honardastan.com">info@honardast.com </a></li>
+      </ul>
+      <ul class="footer_link" name="footer_link">
+        <li class="footer_item" name="footer_item" title="لینک"> <a class="footer_item_link" name="footer_item_link" href="#" title="خانه">خانه</a></li>
+        <li class="footer_item" name="footer_item" title="لینک"> <a class="footer_item_link" name="footer_item_link" href="#" title="درباره ما">درباره ما </a></li>
+        <li class="footer_item" name="footer_item" title="لینک"> <a class="footer_item_link" name="footer_item_link" href="#" title="تماس با ما">تماس با ما</a></li>
+        <li class="footer_item" name="footer_item" title="لینک"> <a class="footer_item_link" name="footer_item_link" href="#" title="شرایط و قوانین">شرایط و قوانین</a></li>
+      </ul>
+      <div class="valid_symbols"> <a class="enamad_link" href="#"> <img class="enamad" src="./img/enamad.png" alt="enamad"></a><a class="rezi_link" href="#"> <img class="rezi" src="./img/rezi.png" alt="rezi"></a></div>
+    </footer>
+    <div class="bg-white regulation" name="regulation"> 
+      <div class="messenger"><a class="twitter_link" href="#"> <i class="fa-brands fa-x-twitter twitter" name="footer_icon" title="توییتر"></i></a><a class="whatsapp_link" href="#"> <i class="fa-brands fa-whatsapp whatsapp" name="footer_icon" title="واتساپ"></i></a><a class="telegram_link" href="#"> <i class="fa-brands fa-telegram telegram" name="footer_icon" title="تلگرام"></i></a><a class="instagram_link" href="#"> <i class="fa-brands fa-instagram instagram" name="footer_icon" title="اینستاگرام"></i></a></div>
+      <p class="regulation_txt" name="regulation_txt" title="مقررات">تمامی حقوق برای کاربر این محصول محفوظ است.</p>
+    </div>
+  </body>
+  <script src="./js/header.js"> </script>
+  <script src="./js/login.js"> </script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/suggestion.js"> </script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/fontawesome/js/all.min.js"> </script>
+</html>
