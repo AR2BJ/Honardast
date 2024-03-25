@@ -1,0 +1,122 @@
+@font-face {
+	font-family: "IranYekanBlack";
+	src: url("../font/eot/IRANYekanFN-Black.eot");
+	src: local("IRANYekanFN-Black"),
+		url("../font/eot/IRANYekanFN-Black.eot?#iefix") format("embedded-opentype"),
+		url("../font/woff2/IRANYekanFN-Black.woff2") format("woff2"),
+		url("../font/woff/IRANYekanFN-Black.woff") format("woff"),
+		url("../font/ttf/IRANYekanFN-Black.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "IranYekanBold";
+	src: url("../font/eot/IRANYekanFN-Bold.eot");
+	src: local("IRANYekanFN-Bold"),
+		url("../font/eot/IRANYekanFN-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../font/woff2/IRANYekanFN-Bold.woff2") format("woff2"),
+		url("../font/woff/IRANYekanFN-Bold.woff") format("woff"),
+		url("../font/ttf/IRANYekanFN-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "IranYekanMedium";
+	src: url("../font/eot/IRANYekanFN-Medium.eot");
+	src: local("IRANYekanFN-Medium"),
+		url("../font/eot/IRANYekanFN-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../font/woff2/IRANYekanFN-Medium.woff2") format("woff2"),
+		url("../font/woff/IRANYekanFN-Medium.woff") format("woff"),
+		url("../font/ttf/IRANYekanFN-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../font/woff2/fa-regular-400.woff2") format("woff2"),
+		url("../font/ttf/fa-regular-400.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style-type: none;
+	direction: rtl;
+	scroll-behavior: smooth;
+}
+
+main
+	> div.swiper
+	> div.swiper-pagination
+	> span.swiper-pagination-bullet-active {
+	background-color: #fff;
+	border-radius: 25px;
+	height: 13px !important;
+	animation: width 0.3s linear 1 both;
+}
+
+main > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet {
+	width: 13px;
+	height: 13px;
+	border: 2px solid #fff;
+	margin-bottom: 15px;
+}
+
+main > div.swiper > div.swiper-button-disabled {
+	visibility: hidden;
+	opacity: 0;
+}
+
+main.main > div.submit > form > div.input_form > div.wave-group {
+	transform: rotateY(180deg);
+}
+
+main.main > div.submit > form > div.input_form > div.wave-group > input.input,
+main.main > div.submit > form > div.input_form > div.wave-group > label.label {
+	transform: rotateY(180deg);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+	transform: translateY(-20px);
+	font-size: 14px;
+	color: #2ea4c2;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+	width: 50%;
+}
+
+.switch input:checked + .slider {
+	background: #2ea4c2;
+}
+
+.switch input:focus + .slider {
+	box-shadow: 0 0 1px #2ea4c2;
+}
+
+.switch input:checked + .slider:before {
+	transform: translateX(-1.49rem);
+}
+
+@keyframes width {
+	from {
+		width: 12px;
+	}
+	to {
+		width: 30px;
+	}
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(8px);
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
