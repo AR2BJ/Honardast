@@ -4,6 +4,12 @@ let inp2 = document.querySelector(
 let inp3 = document.querySelector(
 	"main.main > div.submit > form > div.input_form > div.wave-group:nth-of-type(7) > input"
 );
+let bar = document.querySelector(
+	"main.main > div.submit > form > div.input_form > div.wave-group:nth-of-type(7) > span"
+);
+let label = document.querySelector(
+	"main.main > div.submit > form > div.input_form > div.wave-group:nth-of-type(7) > label > span"
+);
 let show2 = document.querySelector(
 	"main.main > div.submit > form > div.input_form > div.wave-group:nth-of-type(6) > button.show_pass"
 );
@@ -37,5 +43,22 @@ show3.addEventListener("click", () => {
 		inp3.type = "password";
 		svg_6.style.display = "block";
 		svg_5.style.display = "none";
+	}
+});
+
+inp3.addEventListener("input", () => {
+	if (inp2.value !== "" && inp2.value !== inp3.value) {
+		bar.classList.replace("after:bg-[#2ea4c2]", "after:bg-red-600");
+		bar.classList.replace("before:bg-[#2ea4c2]", "before:bg-red-600");
+		label.classList.add("!text-red-600");
+	} else {
+		bar.classList.replace("after:bg-red-600", "after:bg-[#2ea4c2]");
+		bar.classList.replace("before:bg-red-600", "before:bg-[#2ea4c2]");
+		label.classList.remove("!text-red-600");
+	}
+	if (inp3.value === "") {
+		bar.classList.replace("after:bg-red-600", "after:bg-[#2ea4c2]");
+		bar.classList.replace("before:bg-red-600", "before:bg-[#2ea4c2]");
+		label.classList.remove("!text-red-600");
 	}
 });
