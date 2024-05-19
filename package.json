@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"tailwind": "npx tailwindcss -i ./vendor/tailwind/tailwind.css -o ./css/dashboard.css --watch"
+		"tailwind": "npx tailwindcss -i ./css/tailwind.css -o ./css/dashboard.css --watch"
 	},
 	"keywords": [],
 	"author": "",
