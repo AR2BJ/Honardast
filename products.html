@@ -13,6 +13,7 @@
 		<meta name="author" content="Arman Birjandi, sina tamjid" />
 		<link type="image/x-icon" href="./img/Logo.ico" rel="shortcut icon" />
 		<link href="./css/main.css" rel="stylesheet" />
+		<link href="./css/products.css" rel="stylesheet" />
 		<link href="./vendor/fontawesome/css/all.min.css" rel="stylesheet" />
 	</head>
 
@@ -73,34 +74,51 @@
 				</li>
 			</ul>
 			<div
-				class="icon_header flex flex-row justify-around text-xl lg:w-[15%] md:w-1/4 lg:order-4 md:order-2 lg:ml-0 md:ml-60"
+				class="icon_header h-full flex flex-row justify-around text-xl lg:w-[15%] md:w-1/4 lg:order-4 md:order-2 lg:ml-0 md:ml-60"
 				id="icon_header">
 				<a
-					class="icon icon_1 text-zinc-800 transition-all hover:text-[#2ea4c2]"
+					class="icon icon_1 w-full text-zinc-800 flex flex-row justify-center items-center transition-all hover:text-[#2ea4c2]"
 					href="#!">
 					<i
 						class="fa-regular fa-magnifying-glass icon icon_1"
 						title="جستجو"></i>
 				</a>
-				<a
-					class="icon icon_2 text-zinc-800 transition-all hover:text-[#2ea4c2]"
-					href="./login.html"
-					><i
-						class="fa-regular fa-user icon icon_2"
-						title="ورود به حساب کاربری"></i>
-				</a>
-				<a
-					class="icon icon_3 text-zinc-800 transition-all hover:text-[#2ea4c2]"
-					href="#!">
+				<div
+					class="icon icon_2 w-full text-zinc-800 relative flex flex-row justify-center items-center transition-all cursor-pointer hover:text-[#2ea4c2] group">
+					<i class="fa-regular fa-user icon icon_2" title="حساب"></i>
 					<div
-						class="badge block font-[IranYekanMedium] text-sm p-1.5 text-center pb-2 bg-[#e29fb5] text-zinc-800 rounded-full leading-3 w-5 h-5 invisible opacity-0 m-[-7px_-19px_-13px_0] z-[2] transition-all"></div>
+						class="submenu w-32 h-28 bg-white text-zinc-800 font-[IranYekanMedium] shadow-[1px_3px_10px_2px_#8b8b8b] rounded-b-lg absolute top-20 left-0 group-hover:flex group-hover:text-zinc-800 hidden flex-col justify-center items-start">
+						<div
+							class="item_1 w-full h-1/2 flex flex-row justify-start items-center hover:text-[#2ea4c2] transition-all">
+							<a
+								href="./login.html"
+								class="flex flex-row justify-start items-center text-[16px] pr-4"
+								><i class="fa-regular fa-right-from-bracket pl-2 pt-1"></i
+								>ورود</a
+							>
+						</div>
+						<div
+							class="item_2 w-full h-1/2 flex flex-row justify-start items-center hover:text-[#2ea4c2] transition-all">
+							<a
+								href="./signup.html"
+								class="flex flex-row justify-start items-center text-[16px] pr-4"
+								><i class="fa-regular fa-user-plus pl-2"></i>عضویت</a
+							>
+						</div>
+					</div>
+				</div>
+				<a
+					class="icon icon_3 w-full relative text-zinc-800 flex flex-row justify-center items-center transition-all hover:text-[#2ea4c2]"
+					href="./buy.html">
+					<div
+						class="badge w-5 h-5 flex flex-row justify-center items-center absolute top-5 right-5 font-[IranYekanMedium] invisible opacity-0 text-sm p-1.5 text-center bg-[#e29fb5] text-zinc-800 rounded-full leading-3 z-[2] transition-all"></div>
 					<i
 						class="fa-regular fa-bag-shopping icon icon_3"
 						title="سبد خرید"></i>
 				</a>
 			</div>
 			<a
-				class="bars lg:hidden md:block md:order-3 md:absolute md:left-0 self-center mx-5 text-4xl text-black transition-all hover:text-[#2ea4c2]"
+				class="bars lg:hidden md:block md:order-3 md:absolute md:left-0 self-center mx-5 text-4xl text-zinc-800 transition-all hover:text-[#2ea4c2]"
 				href="#"
 				><i class="fa-solid fa-bars"></i
 			></a>
@@ -108,7 +126,7 @@
 				class="div_search flex flex-row text-white invisible opacity-0 text-sm transition-all h-10 w-0 lg:order-3 md:order-1">
 				<form class="w-4/5" action="" method="get">
 					<input
-						class="search_field w-full h-full pr-3 font-[IranYekanMedium] rounded-r border-0 bg-[#8b8b8b] shadow-none text-white placeholder:text-sm placeholder:text-white"
+						class="search_field w-full h-full pr-3 font-[IranYekanMedium] rounded-r border-0 bg-[#8b8b8b] outline-none shadow-none text-white placeholder:text-sm placeholder:text-white"
 						type="text"
 						placeholder="جستجو کنید ..." />
 				</form>
@@ -121,12 +139,19 @@
 		</header>
 		<main class="main">
 			<div
-				class="pro_list h-fit flex flex-row justify-center font-[IranYekanMedium] pl-5 gap-8">
+				class="pro_list h-fit flex flex-row justify-center font-[IranYekanMedium] pl-5 gap-5">
 				<div class="grouping w-1/6 py-14 bg-sky-100">
 					<h5 class="w-1/3 font-[IranYekanBold] text-lg mr-7 mt-4 mb-16">
 						دسته بندی
 					</h5>
 					<ul>
+						<li class="my-12 w-1/3 mr-12">
+							<a
+								class="transition-all text-[#2ea4c2] hover:text-[#2ea4c2]"
+								href="#!"
+								>همه محصولات</a
+							>
+						</li>
 						<li class="my-12 w-1/3 mr-12">
 							<a class="transition-all hover:text-[#2ea4c2]" href="#!">ترمه</a>
 						</li>
@@ -175,459 +200,106 @@
 					</ul>
 				</div>
 				<div class="products w-5/6 flex flex-col">
-					<div class="pro_header flex flex-row justify-between items-end mb-14">
+					<div class="header flex flex-row justify-between items-end mb-8">
 						<h3 class="text-4xl font-[IranYekanBold] mr-5 mt-7">محصولات</h3>
 						<div class="content flex flex-row justify-center items-center">
-							<p class="mr-10 ml-16">
+							<p class="ml-5">
 								نمایش
-								<span class="initial">1</span>
+								<span class="initial"></span>
 								-
-								<span class="terminal">10</span>
+								<span class="terminal"></span>
 								از
-								<span class="total">260</span>
+								<span class="total">110</span>
 							</p>
-							<form class="w-40 h-8 relative" action="" method="get">
-								<select
-									class="w-full h-full bg-zinc-300 px-2 rounded-md appearance-none"
-									name="order">
-									<option value="opt1">پیش فرض</option>
-									<option value="opt2">جدید ترین</option>
-									<option value="opt3">ارزان ترین</option>
-									<option value="opt4">گران ترین</option>
-								</select>
-								<svg
-									class="w-3 h-3 absolute left-2 top-2.5"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 512">
-									<path
-										d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-								</svg>
-							</form>
 						</div>
 					</div>
-					<div class="pro_1 flex flex-row">
-						<div
-							class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 mb-14">
+					<div class="products mb-5 flex flex-row justify-center items-center">
+						<div class="pro_1 flex flex-row justify-center items-center">
 							<div
-								class="new_item w-[18.5%] pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_1.jpg"
-									title="ساعت مینا کاری"
-									alt="new_item_1" />
-								<p class="m-2.5">
-									ست 10 پارچه میناکاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(قندان، شکلات خوری و گلدان)</span
-									>
-								</p>
-								<p class="m-2.5">3,500,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pl-1 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_2 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_3.jpg"
-									title="ست آینه شمعدان فیروزه کوبی"
-									alt="new_item_2" />
-								<p class="m-2.5">
-									ست کیف و کفش ترمه <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول یزد)</span
-									>
-								</p>
-								<p class="m-2.5">600,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_3 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_4.jpg"
-									title="ست کیف و کفش با پارچه ترمه"
-									alt="new_item_4" />
-								<p class="m-2.5">
-									فرش 6متری دستباف طرح گل و بوته <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول تبریز)</span
-									>
-								</p>
-								<p class="m-2.5">70,000,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_4 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_2.jpg"
-									title="شکلات خوری مسی"
-									alt="new_item_7" />
-								<p class="m-2.5">
-									سرویس 8 پارچه شربت خوری مینا کاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(تنگ، جام و سینی)</span
-									>
-								</p>
-								<p class="m-2.5">1,200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_5 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_6.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									رومیزی ترمه ابریشمی سرمه دوزی <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول یزد)</span
-									>
-								</p>
-								<p class="m-2.5">780,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_6 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_5.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									سرویس 3 پارچه میناکاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(میوه خوری و گلدان)</span
-									>
-								</p>
-								<p class="m-2.5">1,100,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_7 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_7.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									انگشتر یاقوت کبود <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(با نگین های الماس)</span
-									>
-								</p>
-								<p class="m-2.5">8,524,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_8 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_10.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5 mb-4">سرویس آینه و شمعدان فیروزه کوبی</p>
-								<br />
-								<p class="m-2.5">4,000,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_9 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_9.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									کاسه و سینی حصیر <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول خوزستان)</span
-									>
-								</p>
-								<p class="m-2.5">200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
+						</div>
+						<div class="pro_10 hidden flex-col justify-center items-center">
 							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_11.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									دستبند طلا با نگین زمرد <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(با نگین های کوچک یاقوت و الماس)</span
-									>
-								</p>
-								<p class="m-2.5">15,200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
+							</div>
+						</div>
+						<div class="pro_11 hidden flex-col justify-center items-center">
+							<div
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
+							</div>
+						</div>
+						<div class="pro_12 hidden flex-col justify-center items-center">
+							<div
+								class="pro_1 h-[924px] p-3 pr-5 flex flex-row justify-center items-start overflow-auto">
+								<div
+									class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 gap-5"></div>
 							</div>
 						</div>
 					</div>
-					<div class="pro_2 hidden flex-row">
-						<div
-							class="new_items flex flex-row justify-around flex-wrap font-[IranYekanMedium] mt-3 mb-14">
-							<div
-								class="new_item w-[18.5%] pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_1.jpg"
-									title="ساعت مینا کاری"
-									alt="new_item_1" />
-								<p class="m-2.5">
-									ست 10 پارچه میناکاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(قندان، شکلات خوری و گلدان)</span
-									>
-								</p>
-								<p class="m-2.5">3,500,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_3.jpg"
-									title="ست آینه شمعدان فیروزه کوبی"
-									alt="new_item_2" />
-								<p class="m-2.5">
-									ست کیف و کفش ترمه <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول یزد)</span
-									>
-								</p>
-								<p class="m-2.5">600,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_4.jpg"
-									title="ست کیف و کفش با پارچه ترمه"
-									alt="new_item_4" />
-								<p class="m-2.5">
-									فرش 6متری دستباف طرح گل و بوته <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول تبریز)</span
-									>
-								</p>
-								<p class="m-2.5">70,000,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_2.jpg"
-									title="شکلات خوری مسی"
-									alt="new_item_7" />
-								<p class="m-2.5">
-									سرویس 8 پارچه شربت خوری مینا کاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(تنگ، جام و سینی)</span
-									>
-								</p>
-								<p class="m-2.5">1,200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_6.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									رومیزی ترمه ابریشمی سرمه دوزی <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول یزد)</span
-									>
-								</p>
-								<p class="m-2.5">780,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_5.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									سرویس 3 پارچه میناکاری <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(میوه خوری و گلدان)</span
-									>
-								</p>
-								<p class="m-2.5">1,100,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_7.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									انگشتر یاقوت کبود <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(با نگین های الماس)</span
-									>
-								</p>
-								<p class="m-2.5">8,524,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_10.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5 mb-4">سرویس آینه و شمعدان فیروزه کوبی</p>
-								<br />
-								<p class="m-2.5">4,000,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_9.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									کاسه و سینی حصیر <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(محصول خوزستان)</span
-									>
-								</p>
-								<p class="m-2.5">200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-							<div
-								class="new_item w-[18.5%] mr-5 mt-7 pb-2.5 shadow-[1px_3px_10px_2px_#8b8b8b] text-zinc-800 flex flex-col rounded-xl"
-								title="">
-								<img
-									class="new_img rounded-lg h-52 w-11/12 my-4 mx-auto"
-									src="./img/item_11.jpg"
-									title="جعبه جواهرات خاتم کاری"
-									alt="new_item_8" />
-								<p class="m-2.5">
-									دستبند طلا با نگین زمرد <br /><span
-										class="text-[11px] pt-3 inline-block font-[IranYekanBold]"
-										>(با نگین های کوچک یاقوت و الماس)</span
-									>
-								</p>
-								<p class="m-2.5">20,200,000 تومان</p>
-								<input
-									class="add_buy_btn p-2.5 text-center text-white bg-[#1e6889] rounded-md mx-2.5 transition-all cursor-pointer hover:bg-[#2ea4c2] hover:border-[#2ea4c2] hover:text-black"
-									type="button"
-									title="افزودن به سبد خرید"
-									value="افزودن به سبد خرید" />
-							</div>
-						</div>
-					</div>
-					<div class="pag_btn mb-5 mx-auto">
+					<div class="pag_btn mb-6 mx-auto">
 						<nav
 							class="isolate inline-flex flex-row-reverse -space-x-px rounded-md shadow-sm"
 							aria-label="Pagination">
@@ -708,85 +380,6 @@
 							>
 							<a
 								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>12</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>13</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>14</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>15</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>16</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>17</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>18</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>19</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>20</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>21</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>22</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:hidden"
-								>23</a
-							>
-							<span
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 md:inline-flex"
-								>...</span
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:inline-flex"
-								>24</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:inline-flex"
-								>25</a
-							>
-							<a
-								href="#"
-								class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:inline-flex"
-								>26</a
-							>
-							<a
-								href="#"
 								class="next relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
 								<span class="sr-only">Next</span>
 								<svg
@@ -812,7 +405,7 @@
 				</p>
 				<a class="btn_link text-xl w-[15%]" href="./submit.html">
 					<input
-						class="btn_slink w-full p-1 bg-[#1e6889] border-2 border-solid border-[#1e6889] font-[IranYekanBold] text-xl text-white rounded-md transition-all cursor-pointer hover:text-black hover:bg-[#2ea4c2] hover:border-[#2ea4c2]"
+						class="btn_slink w-full p-1 bg-[#1e6889] border-2 border-solid border-[#1e6889] font-[IranYekanBold] text-xl text-white rounded-md transition-all cursor-pointer hover:text-zinc-800 hover:bg-[#2ea4c2] hover:border-[#2ea4c2]"
 						type="button"
 						value="ثبت"
 				/></a>
@@ -847,23 +440,23 @@
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="#"
-						title="مسی"
-						>صنایع دستی مسی</a
+						href="./new.html"
+						title="جدیدترین ها"
+						>جدیدترین ها</a
 					>
 				</li>
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="#"
-						title="سفالی"
-						>صنایع دستی سفالی</a
+						href="./login.html"
+						title="ورود"
+						>ورود به حساب کاربری</a
 					>
 				</li>
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="./account.html"
+						href="./signup.html"
 						title="ورود به حساب کاربری"
 						>ایجاد حساب کاربری</a
 					>
@@ -934,8 +527,8 @@
 			</p>
 		</div>
 	</body>
-	<script src="./js/header.js"></script>
-	<script src="./js/products.js"></script>
-	<script src="./js/suggestion.js"></script>
 	<script src="./vendor/fontawesome/js/all.min.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/data.js"></script>
+	<script src="./js/products.js"></script>
 </html>

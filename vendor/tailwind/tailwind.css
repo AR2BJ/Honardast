@@ -44,34 +44,53 @@
 	scroll-behavior: smooth;
 }
 
-main
-	> div.swiper
-	> div.swiper-pagination
-	> span.swiper-pagination-bullet-active {
-	background-color: #fff;
-	border-radius: 25px;
-	height: 13px !important;
-	animation: width 0.3s linear 1 both;
-}
-
-main > div.swiper > div.swiper-pagination > span.swiper-pagination-bullet {
-	width: 13px;
-	height: 13px;
-	border: 2px solid #fff;
-	margin-bottom: 15px;
-}
-
-main > div.swiper > div.swiper-button-disabled {
-	visibility: hidden;
-	opacity: 0;
-}
-
-main.main > div.submit > form > div.input_form > div.wave-group {
+.fa-truck-ramp-box {
 	transform: rotateY(180deg);
 }
 
-main.main > div.submit > form > div.input_form > div.wave-group > input.input,
-main.main > div.submit > form > div.input_form > div.wave-group > label.label {
+input:checked + .slider {
+	background-color: #1e6889;
+}
+
+input:checked + .slider:before {
+	transform: translateX(100%);
+	left: 18%;
+	bottom: 14%;
+	box-shadow: inset 15px -4px 0px 15px #ffd000;
+}
+
+main.main
+	> div.Contents
+	> div.content
+	> div.third_content
+	> div.prof
+	> div.Contents
+	> div.content_1
+	> form
+	> div.wave-group {
+	transform: rotateY(180deg);
+}
+
+main.main
+	> div.Contents
+	> div.content
+	> div.third_content
+	> div.prof
+	> div.Contents
+	> div.content_1
+	> form
+	> div.wave-group
+	> input.input,
+main.main
+	> div.Contents
+	> div.content
+	> div.third_content
+	> div.prof
+	> div.Contents
+	> div.content_1
+	> form
+	> div.wave-group
+	> label.label {
 	transform: rotateY(180deg);
 }
 
@@ -87,34 +106,37 @@ main.main > div.submit > form > div.input_form > div.wave-group > label.label {
 	width: 50%;
 }
 
-.switch input:checked + .slider {
-	background: #2ea4c2;
+main > div.Contents > div.content > div.second_content > div.welcom > p.time {
+	direction: ltr;
 }
 
-.switch input:focus + .slider {
-	box-shadow: 0 0 1px #2ea4c2;
+div.new_item_23 {
+	margin-left: 0;
 }
 
-.switch input:checked + .slider:before {
-	transform: translateX(-1.49rem);
+.loader.active {
+	opacity: 1;
 }
 
-@keyframes width {
-	from {
-		width: 12px;
-	}
-	to {
-		width: 30px;
-	}
+.image-preview__image.loaded {
+	opacity: 1;
 }
 
-@keyframes arrow {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(8px);
-	}
+.after\:bg-red-600::after {
+	content: var(--tw-content);
+	--tw-bg-opacity: 1;
+	background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.before\:bg-red-600::before {
+	content: var(--tw-content);
+	--tw-bg-opacity: 1;
+	background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.\!text-red-600 {
+	--tw-text-opacity: 1 !important;
+	color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
 }
 
 @tailwind base;

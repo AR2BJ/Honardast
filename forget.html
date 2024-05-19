@@ -73,34 +73,51 @@
 				</li>
 			</ul>
 			<div
-				class="icon_header flex flex-row justify-around text-xl lg:w-[15%] md:w-1/4 lg:order-4 md:order-2 lg:ml-0 md:ml-60"
+				class="icon_header h-full flex flex-row justify-around text-xl lg:w-[15%] md:w-1/4 lg:order-4 md:order-2 lg:ml-0 md:ml-60"
 				id="icon_header">
 				<a
-					class="icon icon_1 text-zinc-800 transition-all hover:text-[#2ea4c2]"
+					class="icon icon_1 w-full text-zinc-800 flex flex-row justify-center items-center transition-all hover:text-[#2ea4c2]"
 					href="#!">
 					<i
 						class="fa-regular fa-magnifying-glass icon icon_1"
 						title="جستجو"></i>
 				</a>
-				<a
-					class="icon icon_2 text-zinc-800 transition-all hover:text-[#2ea4c2]"
-					href="./login.html"
-					><i
-						class="fa-regular fa-user icon icon_2"
-						title="ورود به حساب کاربری"></i>
-				</a>
-				<a
-					class="icon icon_3 text-zinc-800 transition-all hover:text-[#2ea4c2]"
-					href="#!">
+				<div
+					class="icon icon_2 w-full text-zinc-800 relative flex flex-row justify-center items-center transition-all cursor-pointer hover:text-[#2ea4c2] group">
+					<i class="fa-regular fa-user icon icon_2" title="حساب"></i>
 					<div
-						class="badge block font-[IranYekanMedium] text-sm p-1.5 text-center pb-2 bg-[#e29fb5] text-zinc-800 rounded-full leading-3 w-5 h-5 invisible opacity-0 m-[-7px_-19px_-13px_0] z-[2] transition-all"></div>
+						class="submenu w-32 h-28 bg-white text-zinc-800 font-[IranYekanMedium] shadow-[1px_3px_10px_2px_#8b8b8b] rounded-b-lg absolute top-20 left-0 group-hover:flex group-hover:text-zinc-800 hidden flex-col justify-center items-start">
+						<div
+							class="item_1 w-full h-1/2 flex flex-row justify-start items-center hover:text-[#2ea4c2] transition-all">
+							<a
+								href="./login.html"
+								class="flex flex-row justify-start items-center text-[16px] pr-4"
+								><i class="fa-regular fa-right-from-bracket pl-2 pt-1"></i
+								>ورود</a
+							>
+						</div>
+						<div
+							class="item_2 w-full h-1/2 flex flex-row justify-start items-center hover:text-[#2ea4c2] transition-all">
+							<a
+								href="./signup.html"
+								class="flex flex-row justify-start items-center text-[16px] pr-4"
+								><i class="fa-regular fa-user-plus pl-2"></i>عضویت</a
+							>
+						</div>
+					</div>
+				</div>
+				<a
+					class="icon icon_3 w-full relative text-zinc-800 flex flex-row justify-center items-center transition-all hover:text-[#2ea4c2]"
+					href="./buy.html">
+					<div
+						class="badge w-5 h-5 flex flex-row justify-center items-center absolute top-5 right-5 font-[IranYekanMedium] invisible opacity-0 text-sm p-1.5 text-center bg-[#e29fb5] text-zinc-800 rounded-full leading-3 z-[2] transition-all"></div>
 					<i
 						class="fa-regular fa-bag-shopping icon icon_3"
 						title="سبد خرید"></i>
 				</a>
 			</div>
 			<a
-				class="bars lg:hidden md:block md:order-3 md:absolute md:left-0 self-center mx-5 text-4xl text-black transition-all hover:text-[#2ea4c2]"
+				class="bars lg:hidden md:block md:order-3 md:absolute md:left-0 self-center mx-5 text-4xl text-zinc-800 transition-all hover:text-[#2ea4c2]"
 				href="#"
 				><i class="fa-solid fa-bars"></i
 			></a>
@@ -108,7 +125,7 @@
 				class="div_search flex flex-row text-white invisible opacity-0 text-sm transition-all h-10 w-0 lg:order-3 md:order-1">
 				<form class="w-4/5" action="" method="get">
 					<input
-						class="search_field w-full h-full pr-3 font-[IranYekanMedium] rounded-r border-0 bg-[#8b8b8b] shadow-none text-white placeholder:text-sm placeholder:text-white"
+						class="search_field w-full h-full pr-3 font-[IranYekanMedium] rounded-r border-0 bg-[#8b8b8b] outline-none shadow-none text-white placeholder:text-sm placeholder:text-white"
 						type="text"
 						placeholder="جستجو کنید ..." />
 				</form>
@@ -149,7 +166,7 @@
 					<div
 						class="btn_sub w-fit pt-7 flex flex-row justify-start items-center">
 						<input
-							class="bg-[#2ea4c2] text-black text-lg p-2 mx-5 my-5 rounded-md w-28 transition-all cursor-pointer hover:bg-[#1e6889] hover:text-white"
+							class="bg-[#2ea4c2] text-zinc-800 text-lg p-2 mx-5 my-5 rounded-md w-28 transition-all cursor-pointer hover:bg-[#1e6889] hover:text-white"
 							type="submit"
 							value="ارسال لینک" />
 					</div>
@@ -163,7 +180,7 @@
 				</p>
 				<a class="btn_link text-xl w-[15%]" href="./submit.html">
 					<input
-						class="btn_slink w-full p-1 bg-[#1e6889] border-2 border-solid border-[#1e6889] font-[IranYekanBold] text-xl text-white rounded-md transition-all cursor-pointer hover:text-black hover:bg-[#2ea4c2] hover:border-[#2ea4c2]"
+						class="btn_slink w-full p-1 bg-[#1e6889] border-2 border-solid border-[#1e6889] font-[IranYekanBold] text-xl text-white rounded-md transition-all cursor-pointer hover:text-zinc-800 hover:bg-[#2ea4c2] hover:border-[#2ea4c2]"
 						type="button"
 						value="ثبت"
 				/></a>
@@ -198,23 +215,23 @@
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="#"
-						title="مسی"
-						>صنایع دستی مسی</a
+						href="./new.html"
+						title="جدیدترین ها"
+						>جدیدترین ها</a
 					>
 				</li>
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="#"
-						title="سفالی"
-						>صنایع دستی سفالی</a
+						href="./login.html"
+						title="ورود"
+						>ورود به حساب کاربری</a
 					>
 				</li>
 				<li class="footer_item cursor-pointer">
 					<a
 						class="footer_item_link text-white transition-all hover:text-[#e29fb5]"
-						href="./account.html"
+						href="./signup.html"
 						title="ورود به حساب کاربری"
 						>ایجاد حساب کاربری</a
 					>
@@ -285,6 +302,8 @@
 			</p>
 		</div>
 	</body>
-	<script src="./js/header.js"></script>
 	<script src="./vendor/fontawesome/js/all.min.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/data.js"></script>
+	<script src="./js/badge.js"></script>
 </html>
